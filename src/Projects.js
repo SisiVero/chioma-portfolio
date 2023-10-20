@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaEye } from "react-icons/fa6";
 import projectData from './projectData.js';
 import "./App.css";
+import Excerpt from "./Excerpt"
 
 function Projects() {
   return (
@@ -11,7 +12,7 @@ function Projects() {
           <h3 className="project-title">{project.title}</h3>
           <p className="project-language">{project.language}</p>
           <img src={project.imageSrc} alt={project.title} className="projects-image" />
-          <p className="project-desc">{project.description}</p>
+          <p className="project-desc"><Excerpt text={project.description} wordCount = {10} /></p>
           <div className="project-links">
             <div className="link-section">
               <div className="external-link">
