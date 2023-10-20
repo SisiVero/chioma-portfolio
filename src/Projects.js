@@ -12,7 +12,7 @@ function Projects() {
           <h3 className="project-title">{project.title}</h3>
           <p className="project-language">{project.language}</p>
           <img src={project.imageSrc} alt={project.title} className="projects-image" />
-          <p className="project-desc"><Excerpt text={project.description} wordCount = {10} /></p>
+          <p className="project-desc"><Excerpt text={project.description} wordCount = {20} /></p>
           <div className="project-links">
             <div className="link-section">
               <div className="external-link">
