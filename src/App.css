@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 *{
   box-sizing: border-box;
 }
@@ -58,7 +60,7 @@ p{
   text-align: center;
   background-color: #262729;
   margin-top: 3rem;
-  padding: 6rem ;
+  padding: 4rem ;
   color:#ffffff;
   line-height: 1.5;
 
@@ -229,7 +231,7 @@ font-size: 1.3rem;
 }
 .project-language{
   background-color:#051b57;
-  width: 30%;
+  width: 40%;
   padding: 1rem;
   font-size: .7em;
   font-weight: bold;
