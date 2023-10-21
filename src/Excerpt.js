@@ -15,8 +15,8 @@ export default function Excerpt({ text, wordCount }) {
     <>
       {excerpt}
       {words.length > wordCount ? (
-        <button onClick={toggleExpand}>
-          {expanded ? "See less" : "See more"}
+        <button onClick={toggleExpand} className="excerpt">
+          {expanded ? "See less" : "See more..."}
         </button>
       ) : (
         ""

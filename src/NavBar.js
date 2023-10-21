@@ -9,7 +9,6 @@ export default function NavBar() {
 
   function toggleMenu(){
     setMenu(!menu)
-    console.log("toggled!")
   }
 
   return (

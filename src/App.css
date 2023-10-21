@@ -1,6 +1,14 @@
 html{
   scroll-behavior: smooth;
 }
+
+.excerpt{
+  color: rgb(106, 183, 235);
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 *{
   box-sizing: border-box;
 }

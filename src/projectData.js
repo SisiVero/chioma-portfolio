@@ -44,7 +44,7 @@ const projectData = [
     {
       id: 5,
       title: 'Endorsement App',
-      language: 'HTML,CSS & JS',
+      language: 'HTML, CSS & JS',
       description: `This is a web app endorsement app. It is built using vanilla CSS, JavaScript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path.
       It is integrated with Firebase to store data.`,
       imageSrc: './endorsement.jpg',
@@ -59,7 +59,25 @@ const projectData = [
       imageSrc: './color-scheme.jpg',
       gitHub: 'https://github.com/SisiVero/color-scheme-generator',
       liveVersion: 'https://profound-brioche-edeccd.netlify.app'
-    }
+    },
+    {
+      id: 7,
+      title: 'Shopping Cart',
+      language:'HTML, CSS & JS',
+      description: `This a cart webApp, that is connected to firebase to help save user data(list of items). It is built using vanilla CSS, Javascript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path.`,
+      imageSrc: './shoppingcart.png',
+      gitHub: 'https://github.com/SisiVero/firebase-app',
+      liveVersion: 'https://sunny-cuchufli-91076a.netlify.app'
+    },
+    {
+      id: 8,
+      title: 'Mobile Restaurant',
+      language:'HTML, CSS & JS',
+      description: `This a mobile restauarnt that displays the menu and price, and totals your order when you are done ordering. It is built using vanilla CSS, Javascript and HTML. It was built as a part of Scrimba's Frontend Developer Career Path.`,
+      imageSrc: './mobilerestaurant.jpg',
+      gitHub: 'https://github.com/SisiVero/Mobile-restaurant',
+      liveVersion: 'https://bright-pavlova-d3f7f6.netlify.app/'
+    } 
   ];
   
   export default projectData;
