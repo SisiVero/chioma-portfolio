@@ -6,11 +6,11 @@ import About from "./About"
 
 export default function Home(){
     return(
-        <>
+        <div id="/">
         <Introduction />
         <WhatIDo />
         <About />
         <Projects />
-        </>
+        </div>
     )
 } 

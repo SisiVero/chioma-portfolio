@@ -1,40 +1,67 @@
-import React from "react";
-import { FaBars } from "react-icons/fa6";
-import { NavLink } from "react-router-dom";
-import "./NavBar.css"
+import React, { useState } from 'react';
+import { FaBars } from 'react-icons/fa6';
+import { Link as ScrollLink } from 'react-scroll';
+import './NavBar.css';
 
 export default function NavBar() {
+  const [menu, setMenu] = useState(false);
 
-  const[ menu, setMenu] = React.useState(false)
-
-  function toggleMenu(){
-    setMenu(!menu)
+  function toggleMenu() {
+    setMenu(!menu);
   }
 
-  return (
-    // <div className="nav-bar-container">
-    //   <nav >
-    //     <h2>Veronica</h2>
-    //    
-    //     <ul >
-    //       <li>Home</li>
-    //       <li>My Services</li>
-    //       <li>About Me</li>
-    //       <li>My Projects</li>
-    //     </ul>
-    //   </nav>
-    // </div>
-    <nav className="nav-bar">
-     <h2 className="logo">Veronica</h2>
-      <FaBars className="hamburger-icon" onClick={toggleMenu}/>
-      <ul className={` ${menu ? "open" : ""}`}>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/services">Services</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/projects">Projects</NavLink></li>
+ 
 
-        
+  return (
+    <nav className="nav-bar">
+      <h2 className="logo">Veronica</h2>
+      <FaBars className="hamburger-icon" onClick={toggleMenu} />
+      <ul className={` ${menu ? 'open' : ''}`}>
+        <li>
+          <ScrollLink
+            to="/"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            Home
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink
+            to="services"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={400}
+          >
+            Services
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={400}
+          >
+            About
+          </ScrollLink>
+        </li>
+        <li>
+          <ScrollLink
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={400}
+          >
+            Projects
+          </ScrollLink>
+        </li>
       </ul>
-      </nav>
+    </nav>
   );
 }

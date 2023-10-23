@@ -222,6 +222,24 @@ font-size: 1.3rem;
   padding: 2rem;
  
 }
+.my-projects,
+.projects-selection{
+  text-align: center;
+  color: white;
+  margin: 0;
+
+}
+
+.my-projects{
+  padding-top: 2rem;
+  font-size: 3em;
+}
+.projects-selection{
+  font-size: 1.2em;
+  font-weight: bold;
+  color:#bdcaee;
+}
+
 
 .project-text{
   width: 220px;
@@ -299,7 +317,9 @@ color:rgb(236, 235, 241);
 }
 
 
-
+#projects{
+  background-color: #262729;
+}
 
 
 

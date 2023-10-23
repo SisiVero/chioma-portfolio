@@ -1,8 +1,8 @@
 import React from "react"
-import {Link} from "react-router-dom"
+import { Link as ScrollLink } from 'react-scroll';
 export default function WhatIDo(){
     return(
-        <div className="what-i-do">
+        <div className="what-i-do" id="services">
             <h1 className="w-text">What I do</h1>
             <hr />
             <div className="services">
@@ -25,7 +25,7 @@ export default function WhatIDo(){
             </div>
             </div>
 
-          <Link to="/projects"><button className="w-btn">MY PROJECTS</button></Link>  
+          <ScrollLink to="projects"><button className="w-btn">MY PROJECTS</button></ScrollLink>  
         </div>
     )
 }
